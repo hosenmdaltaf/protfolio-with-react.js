@@ -1,13 +1,1100 @@
-body {
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  background-color:#0a192f;
+  color: #8892b0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html,
+body { 
+  height: 100%;
+
+}
+
+#sidebar {
+  background-color:#0a192f;
+  color: #8892b0;
+  width: 200px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-shadow: 3px 0px 5px 1px rgba(0, 0, 0, 0.1);
+  transition: 200ms width;
+  font-family:"Calibre","San Francisco","SF Pro Text","sans-serif";
+  font-size: 20px;
+  line-height: 1.3;
+
+}
+
+.title-container {
+  display: flex;
+  align-items: center;
+  padding: 20px 25px;
+
+}
+
+.title-container h1 {
+  font-size: 25px;
+  font-weight: lighter;
+  padding-left: 20px;
+
+}
+
+.links-container {
+  padding: 0px 20px;
+
+
+
+}
+.links {
+  display: flex;
+  align-items: center;
+
+}
+
+.icon {
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  color: #AFA5D9;
+
+
+}
+.sidebar-icon-img{
+    background-color: #AFA5D9;
+    height: 20px;
+    width: 20px;
+}
+
+.links  span {
+  padding: 0px 20px;
+  color: #AFA5D9;
+}
+
+.nav__link{
+  position: relative;
+    margin-bottom: 1.5rem;
+  color: #AFA5D9;
+  transition: .3s;
+
+}
+
+.nav__link:hover{
+  color: #F7F6FB;
+  text-decoration: none;
+}
+/*Active links*/
+.active{
+  color:#F7F6FB;
+}
+
+.active::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 2px;
+  height: 32px;
+
+}
+#main-dashboard-content {
+  margin-left: 200px;
+  padding: 10px 25px 0px 25px;
+  transition: 400ms margin-left;
+
+}
+
+#particles-js{
+
+  height: 100vh;
+   position: absolute;
+
+}
+
+.home-seaction{
+
+top: 10%;
+  color: #e7ebef;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 2%;
+}
+.home{
+
+}
+
+.header-sidebar {
+
+  display: flex;
+  flex-direction: column;
+}
+.header-img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin-left: 50px;
+}
+
+.header-icon ul{
+    display: flex;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+.header-icon ul li{
+list-style-type: none;
+justify-content: space-around;
+padding:15px;
+}
+
+.header-icon ul li i{
+  height: 50px;
+  width: 50px;
+  font-size: 44px;
+  color: #AFA5D9;
+
+}
+.header-text{
+  margin: 0;
+
+}
+.header-text-1{
+  margin: 0px 0px 30px 4px;
+    color: #64ffda;
+    font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+    line-height: 1.1;
+    font-weight: 400;
+
+}
+.header-text-2{
+
+margin: 0px 0px 30px 4px;
+display: block;
+color: #ccd6f6;
+margin-top: 10px;
+line-height: 0.9;
+font-weight: 600;
+font-size: clamp(40px, 7vw, 70px);
+}
+.header-text-3{
+margin-top: 10px;
+color: #8892b0;
+line-height: 0.9;
+font-weight: 600;
+font-size: clamp(30px, 5vw, 50px);
+}
+
+.header-text-4{
+  margin: 20px 0px 0px;
+    max-width: 500px;
+    color: #8892b0;
+    line-height: 1.3;
+    font-weight: 600;
+    font-size: clamp(10px, 2vw, 20px);
+}
+.btn button{
+color: #64ffda;;
+background-color: transparent;
+border: 1px solid #64ffda;;
+border-radius:  4px;
+padding: 1.25rem 1.75rem;
+font-size: 14px;
+font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+line-height: 1;
+text-decoration: none;
+cursor: pointer;
+transition:  all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+margin-top: 50px;
+
+}
+
+@media (max-width: 1252px) {
+  .header-img{
+      display: none;
+  }
+  .header-text-2{
+  font-size: clamp(40px, 8vw, 80px);
+  }
+  .header-text-3{
+  font-size: clamp(30px, 7vw, 70px);
+  }
+  .header-text-4{
+    margin: 20px 0px 0px;
+      max-width: 500px;
+      color: #8892b0;
+      line-height: 1.3;
+      font-weight: 600;
+         font-size: clamp(10px, 2vw, 20px);
+
+  }
+  .home{
+      justify-content: space-between;
+      top: 8%;
+  }
+  .header-sidebar {
+        margin-right: 5%;
+        margin-top: 5%;
+  }
+  .header-icon ul{
+    flex-direction: column;
+  }
+
+}
+
+@media (max-width: 950px) {
+  .title-container h1 {
+    display: none;
+  }
+  .links span {
+    display: none;
+  }
+  .title-container {
+   padding: 20px;
+ }
+  #sidebar {
+    width: 75px;
+  }
+  #main-dashboard-content {
+    margin-left: 75px;
+  }
+
+.header-text{
+ margin-right: 10%;
+
+}
+.header-icon ul li i{
+  height: 30px;
+  width: 30px;
+  font-size: 44px;
+  color: #AFA5D9;
+
+}
+
+}
+
+@media(max-width:827px){
+    .container{
+        flex-direction: column;
+
+    }
+    .seactionB img{
+       margin-left: 30%;
+       margin-top: 25px;
+    }
+    .header-text{
+        text-align: center;
+
+        font-size: 30px;
+    }
+
+    .header-text h1{
+       margin-bottom: 20px;
+    }
+
+    .navbar{
+        font-size: 30px;
+
+    }
+    .btn{
+      margin-left: 25%;
+
+    }
+
+    .btn button{
+
+
+    }
+    .home{
+        top: 8%;
+    }
+    .about-seaction{
+
+        display:flex;
+    margin-top: 20%;
+
+    }
+}
+
+
+
+@media (max-width:778px) {
+  .header-text-4{
+    font-family: "Calibre","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
+    font-size: 18px;
+  }
+
+
+  .header-icon ul li i{
+
+   width: 20px;
+   height: 20px;
+  }
+  .title-for-all-header {
+      font-size: 35px;
+  }
+}
+
+.title-for-all-header {
+    font-weight: 400;
+ margin: 0px 0px 30px 4px;
+    font-size: 45px;
+
+    border-left: 5px solid #fc5356;
+    padding-left: 15px;
+    color: #64ffda;
+    font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+}
+
+@media (max-width:600px) {
+  .header-icon{
+    display: none;
+  }
+  .title-for-all-header {
+      font-size: 28px;
+  }
+
+}
+@media (max-width:450px) {
+
+  .btn{
+
+      margin-left: 9%;
+
+    }
+    .title-for-all-header {
+        font-size: 20px;
+    }
+
+  }
+/*About.....................................................................................................................Section*/
+
+.about-seaction{
+
+
+ display: flex;
+ justify-content: space-around;
+ margin-top: 30px;
+margin-bottom: 50px;
+ margin-left: 2%;
+
+}
+
+.about-img{
+
+  width: 350px;
+  height: 400px;
+     margin-left: 10%;
+
+     margin-top: 10%;
+}
+
+.right-side-li li{
+
+}
+.about-seaction-social-icon {
+  display: none;
+  margin-left: 17%;
+}
+.about-seaction-social-icon ul{
+  display: flex;
+
+  padding: 20px;
+}
+.about-seaction-social-icon ul li{
+    list-style-type: none;
+justify-content: space-around;
+padding:15px;
+}
+
+.about-seaction-social-icon ul li i{
+  color: #8892b0;
+}
+
+.detils{
+    padding: 20px;
+    margin-top: 25px;
+
+
+}
+
+.detils p{
+
+    margin: 20px 0px 0px;
+      max-width: 500px;
+      color: #8892b0;
+      line-height: 1.3;
+      font-weight: 600;
+         font-size: clamp(10px, 2vw, 20px);
+}
+.skill-list{
+
+padding: 0px;
+margin: 20px 0px 0px;
+overflow: hidden;
+list-style: none;
+}
+.skill-list ul{
+  display:flex;
+list-style: none;
+justify-content: space-between;
+
+
+}
+.skill-list ul li{
+  position: relative;
+
+margin-bottom: 10px;
+font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+font-size: 13px;
+
+
+}
+.skill-list ul li i{
+color:  #64ffda;
+}
+
+@media (max-width:1162px) {
+  .about-img{
+
+
+       margin-right: 2%;
+
+       margin-top: 28%;
+  }
+
+}
+@media (max-width:1102px) {
+  .about-seaction{
+    flex-direction: column;
+  }
+  .about-img{
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  width: auto;
+  height: auto;
+
+  margin-left: 0%;
+
+  margin-top: 0%;
+
+}
+
+.detils{
+    padding: 20px;
+    margin-top: 25px;
+    margin-bottom: 75px;
+}
+.detils p{
+  max-width: 100%;
+  max-height: 100%;
+
+  width: auto;
+  height: auto;
+}
+}
+@media (max-width:600px) {
+  .detils{
+      padding: 2px;
+      margin-top: 5px;
+      margin-bottom: 5px;
+  }
+  .detils p{
+        font-family: "Calibre","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
+        font-size: 10px;
+  }
+  .skill-list ul li{
+
+font-family: "Calibre","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
+  font-size: 10px;
+
+
+  }
+
+}
+
+
+
+/*About.....................................................................................................................Section*/
+/* ================ The Timeline ================ */
+#Skills-secation{
+margin-top: 5%;
+margin-bottom: 5%;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 112.5%;
+  line-height: 1.6em;
+}
+.Skills-secation-h1{
+
+}
+.timeline {
+
+  position: relative;
+  width: 660px;
+    margin-bottom: 2%;
+
+  margin: 0 auto;
+
+  padding: 1em 0;
+  list-style-type: none;
+}
+
+.timeline:before {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  content: ' ';
+  display: block;
+  width: 6px;
+  height: 100%;
+  margin-left: -3px;
+  background: rgb(80,80,80);
+  background: -moz-linear-gradient(top, rgba(80,80,80,0) 0%, rgb(80,80,80) 8%, rgb(80,80,80) 92%, rgba(80,80,80,0) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(30,87,153,1)), color-stop(100%,rgba(125,185,232,1)));
+  background: -webkit-linear-gradient(top, rgba(80,80,80,0) 0%, rgb(80,80,80) 8%, rgb(80,80,80) 92%, rgba(80,80,80,0) 100%);
+  background: -o-linear-gradient(top, rgba(80,80,80,0) 0%, rgb(80,80,80) 8%, rgb(80,80,80) 92%, rgba(80,80,80,0) 100%);
+  background: -ms-linear-gradient(top, rgba(80,80,80,0) 0%, rgb(80,80,80) 8%, rgb(80,80,80) 92%, rgba(80,80,80,0) 100%);
+  background: linear-gradient(to bottom, rgba(80,80,80,0) 0%, rgb(80,80,80) 8%, rgb(80,80,80) 92%, rgba(80,80,80,0) 100%);
+
+  z-index: 5;
+}
+
+.timeline li {
+  padding: 1em 0;
+}
+
+.timeline li:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.direction-l {
+  position: relative;
+  width: 300px;
+  float: left;
+  text-align: right;
+}
+
+.direction-r {
+  position: relative;
+  width: 300px;
+  float: right;
+}
+
+.flag-wrapper {
+  position: relative;
+  display: inline-block;
+
+  text-align: center;
+}
+
+.flag {
+  position: relative;
+  display: inline;
+  background: rgb(248,248,248);
+  padding: 6px 10px;
+  border-radius: 5px;
+
+  font-weight: 600;
+  text-align: left;
+}
+
+.direction-l .flag {
+  -webkit-box-shadow: -1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+  -moz-box-shadow: -1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+  box-shadow: -1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+}
+
+.direction-r .flag {
+  -webkit-box-shadow: 1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+  -moz-box-shadow: 1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+  box-shadow: 1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+}
+
+.direction-l .flag:before,
+.direction-r .flag:before {
+  position: absolute;
+  top: 50%;
+  right: -40px;
+  content: ' ';
+  display: block;
+  width: 12px;
+  height: 12px;
+  margin-top: -10px;
+  background: #fff;
+  border-radius: 10px;
+  border: 4px solid rgb(255,80,80);
+  z-index: 10;
+}
+
+.direction-r .flag:before {
+  left: -40px;
+}
+
+.direction-l .flag:after {
+  content: "";
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  height: 0;
+  width: 0;
+  margin-top: -8px;
+  border: solid transparent;
+  border-left-color: rgb(248,248,248);
+  border-width: 8px;
+  pointer-events: none;
+}
+
+.direction-r .flag:after {
+  content: "";
+  position: absolute;
+  right: 100%;
+  top: 50%;
+  height: 0;
+  width: 0;
+  margin-top: -8px;
+  border: solid transparent;
+  border-right-color: rgb(248,248,248);
+  border-width: 8px;
+  pointer-events: none;
+}
+
+.time-wrapper {
+  display: inline;
+
+  line-height: 1em;
+  font-size: 0.66666em;
+  color: rgb(250,80,80);
+  vertical-align: middle;
+}
+
+.direction-l .time-wrapper {
+  float: left;
+}
+
+.direction-r .time-wrapper {
+  float: right;
+}
+
+.time {
+  display: inline-block;
+  padding: 4px 6px;
+  background: rgb(248,248,248);
+}
+
+.desc {
+  margin: 1em 0.75em 0 0;
+
+  font-size: 0.77777em;
+  font-style: italic;
+  line-height: 1.5em;
+}
+
+.direction-r .desc {
+  margin: 1em 0 0 0.75em;
+}
+
+/* ================ Timeline Media Queries ================ */
+
+@media screen and (max-width: 660px) {
+
+.timeline {
+ 	width: 100%;
+	padding: 4em 0 1em 0;
+}
+
+.timeline li {
+	padding: 2em 0;
+}
+
+.direction-l,
+.direction-r {
+	float: none;
+	width: 100%;
+
+	text-align: center;
+}
+
+.flag-wrapper {
+	text-align: center;
+}
+
+.flag {
+	background: rgb(255,255,255);
+	z-index: 15;
+}
+
+.direction-l .flag:before,
+.direction-r .flag:before {
+  position: absolute;
+  top: -30px;
+	left: 50%;
+	content: ' ';
+	display: block;
+	width: 12px;
+	height: 12px;
+	margin-left: -9px;
+	background: #fff;
+	border-radius: 10px;
+	border: 4px solid rgb(255,80,80);
+	z-index: 10;
+}
+
+.direction-l .flag:after,
+.direction-r .flag:after {
+	content: "";
+	position: absolute;
+	left: 50%;
+	top: -8px;
+	height: 0;
+	width: 0;
+	margin-left: -8px;
+	border: solid transparent;
+	border-bottom-color: rgb(255,255,255);
+	border-width: 8px;
+	pointer-events: none;
+}
+
+.time-wrapper {
+	display: block;
+	position: relative;
+	margin: 4px 0 0 0;
+	z-index: 14;
+}
+
+.direction-l .time-wrapper {
+	float: none;
+}
+
+.direction-r .time-wrapper {
+	float: none;
+}
+
+.desc {
+	position: relative;
+	margin: 1em 0 0 0;
+	padding: 1em;
+	background: rgb(245,245,245);
+	-webkit-box-shadow: 0 0 1px rgba(0,0,0,0.20);
+	-moz-box-shadow: 0 0 1px rgba(0,0,0,0.20);
+	box-shadow: 0 0 1px rgba(0,0,0,0.20);
+
+  z-index: 15;
+}
+
+.direction-l .desc,
+.direction-r .desc {
+	position: relative;
+	margin: 1em 1em 0 1em;
+	padding: 1em;
+
+  z-index: 15;
+}
+
+}
+
+@media screen and (min-width: 400px) and  (max-width: 660px) {
+
+.direction-l .desc,
+.direction-r .desc {
+	margin: 1em 4em 0 4em;
+}
+
+}
+
+
+
+/*Projects...................................................................................................................--------..Section*/
+.project-h1{
+  margin-top: 10%;
+}
+.imagesforproject{
+  width: 600px;
+  height: 350px;
+
+    cursor: pointer;
+    overflow: hidden;
+    box-shadow: 0 10px 30px -15px rgba(2,12,27,0.7);
+}
+.main-layer{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  margin-bottom: 5px;
+  margin-left: 2%;
+
+}
+
+.second-layer{
+  margin-right: 50px;
+  font-size: 20px;
+}
+
+.title{
+  text-align: center;
+   font-weight: 600;
+   color: #ccd6f6;
+   line-height: 1.1;
+   margin-top:35px;
+  font-size: clamp(24px, 5vw, 28px);
+}
+.sub-title{
+  display: flex;
+ justify-content: space-around;
+
+}
+.sub-title h6 {
+color:  #64ffda;
+margin-top: 15px;
+font-size: clamp(10px, 3vw, 20px);
+}
+.project-description{
+    box-shadow: 0 10px 30px -15px rgba(2,12,27,0.7);
+     padding: 15px 0 15px  75px;
+
+
+}
+.project-description p{
+
+
+      max-width: 500px;
+      color: #8892b0;
+      line-height: 1.3;
+      font-weight: 600;
+         font-size: clamp(10px, 2vw, 20px);
+}
+
+.project-icon ul{
+  list-style: none;
+  display: flex;
+justify-content: space-around;
+}
+.project-icon ul li a i{
+
+     color: #AFA5D9;
+    padding:15px;
+    margin-left: 15%;
+    margin-top: 20px;
+    overflow: hidden;
+
+}
+.project-button{
+  text-align: center;
+  margin-left: 5%;
+}
+.project-button button{
+  color: #64ffda;;
+background-color: transparent;
+border: 1px solid #64ffda;
+border-radius:  4px;
+padding: 1.25rem 1.75rem;
+font-size: 14px;
+font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+line-height: 1;
+text-decoration: none;
+cursor: pointer;
+transition:  all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+margin-top: 5px;
+margin-bottom: 35px;
+}
+@media (max-width:1102px) {
+  .main-layer{
+    flex-direction: column;
+  }
+  .imagesforproject{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    width: auto;
+    height: auto;
+
+    margin-left: 0%;
+
+    margin-top: 0%;
+  }
+}
+
+/*contact...................................................................................................................--------..Section*/
+
+.contact-section {
+    padding: 100px 0;
+    position: relative;
+}
+
+.gray-bg {
+
+}
+/* Contact Us
+---------------------*/
+.form-control{
+  color: #8892b0;
+
+     font-weight: 600;
+}
+.contact-name {
+  margin-bottom: 30px;
+}
+.contact-name h5 {
+  font-size: 22px;
+
+  color: #64ffda;
+    font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+.contact-name p {
+  font-size: 18px;
+  margin: 0;
+  color: #8892b0;
+  font-weight: 600;
+}
+
+.social-share a {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  text-align: center;
+  margin-right: 10px;
+}
+.social-share .dribbble {
+  box-shadow: 0 8px 30px -4px rgba(234, 76, 137, 0.5);
+  background-color: #ea4c89;
+}
+.social-share .behance {
+  box-shadow: 0 8px 30px -4px rgba(0, 103, 255, 0.5);
+  background-color: #0067ff;
+}
+.social-share .linkedin {
+  box-shadow: 0 8px 30px -4px rgba(1, 119, 172, 0.5);
+  background-color: #0177ac;
+}
+
+.contact-form .form-control {
+  border: none;
+  border-bottom: 1px solid #20247b;
+  background: transparent;
+  border-radius: 0;
+  padding-left: 0;
+  box-shadow: none !important;
+}
+.contact-form .form-control:focus {
+  border-bottom: 1px solid #fc5356;
+}
+.contact-form .form-control.invalid {
+  border-bottom: 1px solid #ff0000;
+}
+.contact-form .send {
+  margin-top: 20px;
+}
+@media (max-width: 767px) {
+  .contact-form .send {
+    margin-bottom: 20px;
+  }
+}
+
+
+.section-title p {
+  color: #8892b0;
+  font-weight: 600;
+}
+
+.section-title {
+    padding-bottom: 45px;
+}
+.contact-form .send {
+    margin-top: 20px;
+}
+.px-btn {
+    padding: 0 50px 0 20px;
+    line-height: 60px;
+    position: relative;
+    display: inline-block;
+
+    background: none;
+    border: none;
+
+    color: #8892b0;
+    font-weight: 600;
+}
+.px-btn:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 30px;
+    background: transparent;
+    border: 1px solid  #64ffda ;
+    border-right: 1px solid transparent;
+    -moz-transition: ease all 0.35s;
+    -o-transition: ease all 0.35s;
+    -webkit-transition: ease all 0.35s;
+    transition: ease all 0.35s;
+    width: 60px;
+    height: 60px;
+}
+.px-btn .arrow {
+    width: 13px;
+    height: 2px;
+
+    background:   #64ffda;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    right: 25px;
+}
+.px-btn .arrow:after {
+    width: 8px;
+    height: 8px;
+    border-right: 2px solid  #64ffda;
+    border-top: 2px solid  #64ffda;
+    content: "";
+    position: absolute;
+    top: -3px;
+    right: 0;
+    display: inline-block;
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+/*footer...................................................................................................................--------..Section*/
+.footer{
+  color: #a8b2d1;
+font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+font-size: 12px;
+line-height: 1;
+  transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+}
+.footer-name{
+  display: flex;
+-webkit-box-pack: center;
+justify-content: center;
+-webkit-box-align: center;
+align-items: center;
+flex-direction: column;
+height: auto;
+min-height: 70px;
+padding: 15px;
+text-align: center;
+
+}
+
+.footer-name:hover{
+  color:#64ffda;
 }
