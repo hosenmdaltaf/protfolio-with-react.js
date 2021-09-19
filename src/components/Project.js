@@ -8,15 +8,27 @@ const Project = () => {
     projectdes:`It's a fullstack django based production ready application  Lots of feature including real-time chat.I add machine learing Algorithm
     so that it can suggest blog other user write  by seeing there surfing`,
     image:'./Ai-project.png',
+    linkGithub:'https://github.com/hosenmdaltaf/Social-bloging-system-with-Django',
+    linkLiveProject:'https://blogwithnextjs.netlify.app'
 },
 
     {title:'Blog with Next.js and DRF',
     subtitle:['Python','Django','JavaScript','Bootstarp','Html&css','Next.js'],
     projectdes:`It's a fullstack blog build with django Rest Framework and Next.js from backend drf serve api and
     in front-end Next.js serve the data`,
-    image:'./cover.jpg',
-    link:'https://github.com/hosenmdaltaf/Social_Media-Application-with-Django'
-}
+    image:'./blogwithnextanddrf.png',
+    linkGithub:'https://github.com/hosenmdaltaf/Social_Media-Application-with-Django',
+    linkLiveProject:'https://blogwithnextjs.netlify.app'
+},
+
+    {title:'Blog with pure Django',
+    subtitle:['Python','Django','JavaScript','Bootstarp','Html&css'],
+    projectdes:`It's a fullstack blog build with pure django as backend and in frontend html&css,javascript with user 
+    authentication only registered user can create post.Fully CRUD operation also implemented.`,
+    image:'./blog with django.png',
+    linkGithub:'https://github.com/hosenmdaltaf/BlogApp-Django',
+    linkLiveProject:'https://simple-blog-with-django.herokuapp.com/'
+},
    ]
       
     return (
@@ -43,8 +55,8 @@ const Project = () => {
                 </div>
                 <div class="project-icon">
                     <ul>
-                        <li><a href="#">  <i class='bx bx-link'></i></a></li>
-                        <li> <a href={data.link}>  <i class='bx bxl-github'></i></a></li>
+                        <li><a href={data.linkLiveProject}>  <i class='bx bx-link'></i></a></li>
+                        <li> <a href={data.linkGithub}>  <i class='bx bxl-github'></i></a></li>
                     </ul>
                 </div>
             {/* <!--finish second-layer  ---> */}

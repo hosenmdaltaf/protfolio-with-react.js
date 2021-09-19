@@ -1,6 +1,18 @@
-import React from 'react'
+import {useState} from 'react'
 
 function Contact() {
+    const [fullname, setFullname] = useState('')
+    const [email, setEmail] = useState('')
+    const [subject, setSubject] = useState('')
+    const [message, setMessage] = useState('')
+
+    const handlePost=(e)=>{
+        e.preventDefault();
+        alert(
+            `${fullname},${email}`
+        )
+    }
+
     return (
         <div id="main-dashboard-content">
 
@@ -17,34 +29,38 @@ function Contact() {
       <div class="row flex-row-reverse">
           <div class="col-md-7 col-lg-8 m-15px-tb">
               <div class="contact-form">
-                   <form action="/" method="post" class="contactform contact_form" id="contact_form">
+                   <form onSubmit={handlePost} class="contactform contact_form" id="contact_form">
                       <div class="returnmessage valid-feedback p-15px-b" data-success="Your message has been received, We will contact you soon."></div>
                       <div class="empty_notice invalid-feedback p-15px-b"><span>Please Fill Required Fields</span></div>
                       <div class="row">
                           <div class="col-md-6">
                               <div class="form-group">
-                                  <input id="name" type="text" placeholder="Full Name" class="form-control"/>
+                                  <input id="name" type="text" placeholder="Full Name" class="form-control"
+                                  value={fullname} onChange={(e)=>setFullname(e.target.value)}/>
                               </div>
                           </div>
                           <div class="col-md-6">
                               <div class="form-group">
-                                  <input id="email" type="text" placeholder="Email Address" class="form-control"/>
+                                  <input id="email" type="text" placeholder="Email Address" class="form-control"
+                                  value={email} onChange={(e)=>setEmail(e.target.value)}/>
                               </div>
                           </div>
                           <div class="col-12">
                               <div class="form-group">
-                                  <input id="subject" type="text" placeholder="Subject" class="form-control"/>
+                                  <input id="subject" type="text" placeholder="Subject" class="form-control"
+                                  value={subject} onChange={(e)=>setSubject(e.target.value)}/>
                               </div>
                           </div>
                           <div class="col-md-12">
                               <div class="form-group">
-                                  <textarea id="message" placeholder="Message" class="form-control" rows="3"></textarea>
+                                  <textarea id="message" placeholder="Message" class="form-control" rows="3"
+                                  value={message} onChange={(e)=>setMessage(e.target.value)}></textarea>
                               </div>
                           </div>
                           <div class="col-md-12">
                               <div class="send">
-                                  <a id="send_message" class="px-btn theme" href="#"><span>Contact Us</span> <i class="arrow"></i></a>
-                              </div>
+                                  <a id="send_message" class="px-btn theme" ><input id="send_message" class="px-btn theme"  type="submit" value="submit" /></a>
+                              </div> 
                           </div>
                       </div>
                   </form>
