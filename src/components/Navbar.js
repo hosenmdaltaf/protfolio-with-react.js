@@ -57,7 +57,7 @@ function Navbar() {
               </div>
                 </a>
 
-              <a href="#" className="nav__link">
+              <a href="/#" className="nav__link">
               <div className="links">
                 <div className="icon">
                     <i className='bx bxl-blogger'></i>
