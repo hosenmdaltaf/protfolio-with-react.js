@@ -17,7 +17,7 @@ function Projects() {
 
 <div id="project-button" class="project-button ">
 
-    <button onClick={hideShow}>See More</button>
+    <button>See More</button>
 
 </div>
 
