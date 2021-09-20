@@ -25,7 +25,7 @@ function Navbar() {
           <a href="#about" className="nav__link">
               <div className="links">
                 <div className="icon">
-                  <i ><img className="sidebar-icon-img" src ="about.png"/></i>
+                  <i ><img className="sidebar-icon-img" src ="about.png" alt="logo"/></i>
                 </div>
                 <span>About</span>
               </div>
@@ -33,7 +33,7 @@ function Navbar() {
                 <a href="#Skills-secation" className="nav__link">
               <div className="links">
                 <div className="icon">
-                  <i  ><img className="sidebar-icon-img" src="icons8-visualization-skill-24.png"/></i>
+                  <i  ><img className="sidebar-icon-img" src="icons8-visualization-skill-24.png" alt="logo"/></i>
                 </div>
                 <span>Skills</span>
               </div>
@@ -42,7 +42,7 @@ function Navbar() {
               <a href="#projects-part" className="nav__link">
               <div className="links">
                 <div className="icon">
-                <i ><img className="sidebar-icon-img" src ="icons8-project-24.png"/></i>
+                <i ><img className="sidebar-icon-img" src ="icons8-project-24.png" alt="logo"/></i>
                 </div>
                 <span>Projects</span>
               </div>
@@ -73,7 +73,7 @@ function Navbar() {
               <a href="https://drive.google.com/file/d/1LUemOr-GFBjCn3n55yZXW1ynQWJ7nH_n/view?usp=sharing" className="nav__link">
               <div className="links">
                 <div className="icon">
-                  <i> <img className="sidebar-icon-img" src="resume.png"/></i>
+                  <i> <img className="sidebar-icon-img" src="resume.png" alt="logo"/></i>
                 </div>
                 <h1>Resume</h1>
               </div>

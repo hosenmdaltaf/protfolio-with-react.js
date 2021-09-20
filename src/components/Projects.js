@@ -1,18 +1,7 @@
-import {useState} from 'react'
+
 import Project from './Project'
 
 function Projects() {
-
-// const[project,setProject]=(<Project/>)
-
-
-// console.log(project)
-   const  hideShow=()=>{
-       if(<Project/> >2){
-           console.log('Too much')
-       }
-
-    }
     return (
         <div id="main-dashboard-content">
 

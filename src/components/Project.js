@@ -40,7 +40,7 @@ const Project = () => {
             
 
      <div class="main-layer">
-        <img class="imagesforproject" src={data.image} alt="Ai-project.png" />
+        <img class="imagesforproject" src={data.image} alt="altaf" />
             <div class="second-layer">
                 <h3 class="title">{data.title}</h3>
                 <div  class="sub-title">

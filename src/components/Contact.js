@@ -59,7 +59,7 @@ function Contact() {
                           </div>
                           <div class="col-md-12">
                               <div class="send">
-                                  <a id="send_message" class="px-btn theme" ><input id="send_message" class="px-btn theme"  type="submit" value="submit" /></a>
+                                  <a href="/#" id="send_message" class="px-btn theme" ><input id="send_message" class="px-btn theme"  type="submit" value="submit" /></a>
                               </div> 
                           </div>
                       </div>
