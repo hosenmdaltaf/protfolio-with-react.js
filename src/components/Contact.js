@@ -29,7 +29,7 @@ function Contact() {
       <div class="row flex-row-reverse">
           <div class="col-md-7 col-lg-8 m-15px-tb">
               <div class="contact-form">
-                   <form onSubmit={handlePost} class="contactform contact_form" id="contact_form">
+                   <form onSubmit={handlePost} method="POST" data-netlify="true" class="contactform contact_form" id="contact_form">
                       <div class="returnmessage valid-feedback p-15px-b" data-success="Your message has been received, We will contact you soon."></div>
                       <div class="empty_notice invalid-feedback p-15px-b"><span>Please Fill Required Fields</span></div>
                       <div class="row">
@@ -57,6 +57,10 @@ function Contact() {
                                   value={message} onChange={(e)=>setMessage(e.target.value)}></textarea>
                               </div>
                           </div>
+                          <div class="col-md-12">
+                          <div data-netlify-recaptcha="true"></div>
+                          </div>
+                          
                           <div class="col-md-12">
                               <div class="send">
                                   <a href="/#" id="send_message" class="px-btn theme" ><input id="send_message" class="px-btn theme"  type="submit" value="submit" /></a>
