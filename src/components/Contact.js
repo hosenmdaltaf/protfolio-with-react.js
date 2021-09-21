@@ -30,7 +30,7 @@ function Contact() {
           <div class="col-md-7 col-lg-8 m-15px-tb">
               <div class="contact-form">
               {/* onSubmit={handlePost} */}
-                   <form  name="contact" netlify netlify-honeypot="bot-field" hidden class="contactform contact_form" id="contact_form">
+                   <form  name="contact" netlify netlify-honeypot="bot-field" class="contactform contact_form" id="contact_form">
                       <div class="returnmessage valid-feedback p-15px-b" data-success="Your message has been received, We will contact you soon."></div>
                       <div class="empty_notice invalid-feedback p-15px-b"><span>Please Fill Required Fields</span></div>
                       <div class="row">
