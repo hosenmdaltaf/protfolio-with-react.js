@@ -8,10 +8,10 @@ export default function About() {
 
 <div class="detils">
     <h1 class=" title-for-all-header">Who am I</h1>
-    <p>Hello! I'm Altaf, a passionate Software Engineer from Bangladesh,currently studing in China. who's experienced
-        in taking fullstack applications from scratch to production.</p>
-   <p> I'm currently attending Henan University Of Technology,  as
-         a Software Engineering student and working at python based FullStack Web development,I am  eager to learn kew technologies and
+    <p>Hello! I'm Altaf, a passionate Software Engineer from Bangladesh, completed my study from Henan University Of Technology,China.who's experienced
+        in taking fullstack applications from scratch to production.
+   </p>
+   <p>Currently, I am working with python and javaScript based FullStack Web development,I am  eager to learn kew technologies and
          looking for new opportunitys.</p>
     <p>Over the last 2 years, I've had the opportunity to develop for a handful of awesome companies / clients as a
       consultant and continue to do so today.

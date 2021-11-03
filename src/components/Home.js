@@ -14,8 +14,8 @@ export default function Home() {
                    <h3 class="header-text-1">Hi,I am </h3>
                      <h1 class="header-text-2">Hosen MD Altaf</h1>
 
-                     <h1 class=" header-text-4">I'm a software engineer based in Bangladesh and currently studying in China,
-                     specializing in  building (and occasionally designing) exceptional websites, applications, and everything in between.
+                     <h1 class=" header-text-4"> I'm a software engineer based on Bangladesh ,completed my study from Henan University Of Technology,China.
+                     Specializing in  building (and occasionally designing) exceptional websites, applications, and everything in between.
                    </h1>
                  </div>
 

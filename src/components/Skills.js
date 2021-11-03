@@ -11,6 +11,17 @@ function Skills() {
 
 <ul class="timeline">
 
+ <li>
+   <div class="direction-l">
+     <div class="flag-wrapper">
+       <span class="flag">Fullstack web developer.</span>
+       <span class="time-wrapper"><span class="time">Octobar 2021 - present</span></span>
+     </div>
+     <div class="desc">Started my journey in Dhaka solution as a fresh graduate position of full stack web developer</div>
+   </div>
+ </li>
+
+
  {/* <!-- Item 1 --> */}
  <li>
    <div class="direction-r">
@@ -18,7 +29,7 @@ function Skills() {
        <span class="flag">Freelancer</span>
        <span class="time-wrapper"><span class="time">2019 - present</span></span>
      </div>
-     <div class="desc">My current employment. I enjoying so much by doing this!</div>
+     <div class="desc">Doing beside my work as a part-time. I enjoying so much by doing this!</div>
    </div>
  </li>
 
@@ -29,7 +40,7 @@ function Skills() {
        <span class="flag">Bachelor degree.</span>
        <span class="time-wrapper"><span class="time">2017 - 2021</span></span>
      </div>
-     <div class="desc">currently i am studing.I am a student of Software Engineering at Henan University of Technology,China.</div>
+     <div class="desc">Complated my study as Computer science and technology student from Henan University of Technology,China.</div>
    </div>
  </li>
 
@@ -40,7 +51,7 @@ function Skills() {
        <span class="flag">Henan 863 Software Co. Ltd</span>
        <span class="time-wrapper"><span class="time">2020</span></span>
      </div>
-     <div class="desc">Complated a 4 weeks internship which help me to gain knowledge.About new technologies and real-life work experience</div>
+     <div class="desc">Complated internship which help me to gain knowledge.About new technologies and real-life work experience</div>
    </div>
  </li>
 
